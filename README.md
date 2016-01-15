@@ -1,2 +1,0 @@
-# domainman
-Simple domain manager

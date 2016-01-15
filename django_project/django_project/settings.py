@@ -1,4 +1,4 @@
-# Django settings for domainman project.
+# Django settings for django_project project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -83,7 +83,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '=70rj0)4+h$^sqbmb2zlcek40m!t2lf82-bjh3lsj_m^i3p%9%'
+SECRET_KEY = 'xot#rpn&tv2wj*d+($3*ltlr1-0-eil$05k^j%%6(s@7zd5a2u'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -102,10 +102,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'domainman.urls'
+ROOT_URLCONF = 'django_project.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'domainman.wsgi.application'
+WSGI_APPLICATION = 'django_project.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
