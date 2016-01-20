@@ -43,7 +43,6 @@ INSTALLED_APPS = (
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -56,7 +55,7 @@ ROOT_URLCONF = 'domainz.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, templates)],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -79,9 +78,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'domainmgr',
-	'USER':	'domains',
-	'PASSWORD':	'Art514cx',
-	'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+    'USER':	'domains',
+    'PASSWORD':	'Art514cx',
+    'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
     }
 }
